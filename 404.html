@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#060014" />
+        <meta name="msapplication-navbutton-color" content="#060014" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#060014" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+            body {
+                margin: 30px;
+                margin-top: 25vmin;
+                background: rgb(12, 0, 39);
+                color: white;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                font-family: Poppins;
+            }
+            h1 {
+                font-weight: 800;
+            }
+            div {
+                font-weight: 500;
+            }
+            .go-back {
+                margin-top: 10vmin;
+                transition: color 0.5s, border-color 0.5s, background-color 0.5s;
+                position: relative;
+                display: inline-block;
+                padding: 5px 10px !important;
+                font-size: 1em !important;
+                background-color: white;
+                color: rgb(12, 0, 39);
+                text-decoration: none;
+                font-size: 15px;
+                cursor: pointer;
+                font-family: Poppins !important;
+            }
+            .go-back:hover {
+                background: rgb(0, 0, 0);
+                color: white;
+                border-color: #333;
+            }
+            code,
+            .go-back {
+                background: white;
+                padding: 2px 4px;
+                font-family: consolas, monospace;
+                color: black;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                word-break: break-all;
+            }
+        </style>
+        <title>404 - Page not found</title>
+    </head>
+    <body>
+        <h1>404 - Not found.</h1>
+        <h1 style="margin-bottom: 0">Oops!</h1>
+        <div>
+            The URL
+            <code id="url" onload="this.innerText = window.location">URL</code>
+            doesn&apos;t exist.
+        </div>
+        <script>
+            document.getElementById('url').innerText = String(window.location).replace(/^.*\/\/[^\/]+/, '');
+        </script>
+        <a class="go-back" onclick="history.back()">Go Back</a>
+    </body>
+</html>
