@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <script src="assets/fontawesome.js"></script>
+        <link rel="stylesheet" href="assets/home/style.css" />
+        <link rel="stylesheet" href="assets/home/donate/style.css" />
+        <title>rens- Donate</title>
+    </head>
+    <body onload="loader.remove()">
+        <span class="loader" id="loader">Loading</span>
+        <header class="unsel" style="left: 0">
+            <button
+                class="back"
+                id="projects"
+                href="/"
+                style="width: 2.5em; height: 2.5em"
+            >
+                <i class="fas fa-arrow-left"></i>
+            </button>
+        </header>
+        <div class="hero">
+            <div class="container">
+                <h1 class="title">Donate Through Bitcoin</h1>
+                <img
+                    src="data:image/png;base64,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sIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGBJGwrzTDDYbjDnvcMALGABC1jAEmABC1jAAhawgAUsYAELWMAClgALWMACFrCABSxgAQtYwAIWsC7NAaWwbrYH3LxPYJd74WpTQAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAApYGrzCxub+/3Bv0vHxhAwtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABK+8Dbt4f5DnvDS73wmeFo8ACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwMrpQZLz2qByX3/bf/7sHqQKLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAWsLMHyINhm75/cJwBszHECLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAWsrBtM00Fqe4Od9y+k3MEEFrCABSxgAQtYwAIWsIAFLGABC1jAAhawgAUsYAELWMACFrCABSxgAQtYwALWzhxwuU8wl3s8CNUXHrCABSxgAQtYwNLgbT+wgAUsYAELWMAClu0HFrCApcHbfmABC1jAAhawgAUs2w8sEZEWfDHaBSICLBERYIkIsEREgCUiAiwRAZaICLBERIAlIsASEQGWiAiwRARYIiLAEhEBlogAS0QEWCIik/N/GF5JJzSgRM8AAAAASUVORK5CYII="
+                    alt="bc1q6vsfhlqj7453x023z0thcyjp40achwpas6x53z"
+                    draggable="false"
+                    class="unsel"
+                />
+                <button
+                    class="btc"
+                    style="
+                        max-width: 450px;
+                        width: 100%;
+                        min-height: 50px;
+                        height: unset;
+                        padding: 0 15px;
+                        font-family: consolas, monospace;
+                    "
+                    href="bitcoin:bc1q6vsfhlqj7453x023z0thcyjp40achwpas6x53z"
+                >
+                    bc1q6vsfhlqj7453x023z0thcyjp40achwpas6x53z
+                </button>
+            </div>
+        </div>
+        <div class="thing"></div>
+        <div class="thing2"></div>
+    </body>
+    <script src="assets/home/script.js"></script>
+</html>

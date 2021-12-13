@@ -1,0 +1,43 @@
+.hero {
+    padding: 0;
+    padding: 50px 0;
+    font-family: consolas, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: clamp(25px, calc(1.5625rem + ((1vw - 8px) * 5)), 5vh);
+}
+
+button {
+    margin: 10px;
+    width: 250px;
+}
+
+@media screen and (max-width: 1080px) {
+    .hero {
+        flex-direction: column;
+    }
+}
+
+button i {
+    transition: 0.2s ease-in-out;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.title {
+    font-weight: normal;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    list-style-image: url('/assets/home/long-arrow-alt-right-solid.svg');
+}

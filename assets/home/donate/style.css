@@ -1,0 +1,49 @@
+.hero {
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+    padding: 50px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    margin: 10px;
+    width: 250px;
+}
+
+@media screen and (max-width: 1080px) {
+    .hero {
+        flex-direction: column;
+    }
+}
+
+button i {
+    transition: .2s ease-in-out;
+}
+
+.container {
+    border-radius: 4vh;
+    border: 2px solid white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 200px;
+    width: 100%;
+}
+
+.btc {
+    word-break: break-all;
+}
+
+.title {
+    font-size: inherit;
+    font-weight: normal;
+}

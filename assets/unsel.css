@@ -1,0 +1,14 @@
+.unsel,
+br,
+button {
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.disable-iframe {
+    pointer-events: none;
+}

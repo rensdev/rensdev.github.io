@@ -1,0 +1,35 @@
+.hero {
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+    padding: 50px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    margin: 10px;
+    width: 250px;
+}
+
+@media screen and (max-width: 1080px) {
+    .hero {
+        flex-direction: column;
+    }
+}
+
+button i {
+    transition: .2s ease-in-out;
+}
+
+#discord:hover i {
+    color: #5865F2;
+}
+
+#twitter:hover i {
+    color: #1DA1F2;
+}
+
+#email:hover i {
+    color: #dd5144;
+}
