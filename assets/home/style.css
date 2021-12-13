@@ -47,7 +47,7 @@ header {
 
 .hero {
     display: flex;
-    padding-left: 15vw;
+    padding: 0 15vw;
     font-size: clamp(25px, calc(1.5625rem + ((1vw - 8px) * 5)), 35px);
     flex-direction: column;
     justify-content: center;
