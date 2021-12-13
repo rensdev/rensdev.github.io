@@ -16,6 +16,9 @@
 
 body {
     background: #1d1d1d;
+    background-image: radial-gradient(#1f1f1f 50%, transparent 20%);
+    background-position: 0 0, 0 0;
+    background-size: 10px 10px;
     color: white;
     overflow-x: hidden;
 }
