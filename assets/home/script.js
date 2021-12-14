@@ -12,6 +12,15 @@ window.onload = function () {
 document.querySelectorAll('button').forEach((b) => {
     b.addEventListener('click', () => {
         var href = b.getAttribute('href');
+        if (b.id == 'btc') {
+            navigator.clipboard.writeText(
+                'bc1q6vsfhlqj7453x023z0thcyjp40achwpas6x53z'
+            );
+            b.innerText = 'Copied';
+            setTimeout(() => {
+                b.innerText = 'bc1q6vsfhlqj7453x023z0thcyjp40achwpas6x53z';
+            }, 1000);
+        }
         if (href) {
             b.removeAttribute('href');
             if (href.startsWith('+')) return window.open(href.substring(1));
