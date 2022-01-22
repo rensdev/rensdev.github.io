@@ -13,7 +13,7 @@ window.onload = function() {
 $('#go-down').click(function (e) {
     $([document.documentElement, document.body]).animate(
         {
-            scrollTop: $('.announcement').offset().top - $('nav').height(),
+            scrollTop: $('hero').height(),
         },
         1000
     );
