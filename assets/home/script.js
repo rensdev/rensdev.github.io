@@ -1,12 +1,13 @@
 const loader = document.getElementById('loader');
 var dot_count = 0;
-setInterval(() => {
+const loader_interval = setInterval(() => {
     loader.innerHTML = 'Loading' + '.'.repeat(dot_count);
     dot_count++;
     if (dot_count > 3) dot_count = 0;
 }, 500);
 window.onload = function () {
     loader.remove();
+    clearInterval(loader_interval);
 };
 
 document.querySelectorAll('button').forEach((b) => {
