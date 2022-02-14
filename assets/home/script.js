@@ -13,13 +13,10 @@ document.querySelectorAll('button').forEach((b) => {
     b.addEventListener('click', () => {
         var href = b.getAttribute('href');
         if (b.id == 'btc') {
-            navigator.clipboard.writeText(
-                'bc1q6vsfhlqj7453x023z0thcyjp40achwpas6x53z'
-            );
+            var btcWallet = b.innerText;
+            navigator.clipboard.writeText(b.innerText);
             b.innerText = 'Copied';
-            setTimeout(() => {
-                b.innerText = 'bc1q6vsfhlqj7453x023z0thcyjp40achwpas6x53z';
-            }, 1000);
+            setTimeout(() => (b.innerText = btcWallet), 1000);
         }
         if (href) {
             b.removeAttribute('href');
